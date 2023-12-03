@@ -19,7 +19,7 @@ let url
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       // Specify the destination directory for uploaded files
-      cb(null, '../MERN_Vidi/frontend/build/thumbnail');
+      cb(null, 'frontend/build/thumbnail');
     },
     filename: function (req, file, cb) {
       // Specify a unique filename for the uploaded file

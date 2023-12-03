@@ -8,7 +8,7 @@ const generateRandomString = require("../middleware/generate-random-string");
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
       // Specify the destination directory for uploaded files
-      cb(null, '../MERN_Vidi/frontend/build/videos');
+      cb(null, 'frontend/build/videos');
     },
     filename: function (req, file, cb) {
       // Specify a unique filename for the uploaded file
